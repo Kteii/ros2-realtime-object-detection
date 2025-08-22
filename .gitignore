@@ -1,0 +1,19 @@
+# Ignore build artifacts (colcon)
+build/
+install/
+log/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore virtual environment
+.venv/
+
+# Ignore IDE files (vscode, etc.)
+.vscode/
+.idea/
+
+# Ignore system files (macOS, Linux)
+.DS_Store
+*.swp
