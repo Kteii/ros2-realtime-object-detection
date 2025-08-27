@@ -36,58 +36,16 @@ ThiOpenCV, CvBridge, Ultralytics
 -ct involves creYOLOv8
 
 ---
+⚙️ Install and Run
+Follow these steps to set up and run the project.
 
-## Install and Run
+---
+Step 1: Create ROS 2 Workspace & Clone
+First, create a ROS 2 workspace and clone your repository into it.
 
-### Step 1: Create ROS 2 Workspace
-First, create a **ROS 2 workspace** on your machine:
-```bash
+# Create the directory structure
 mkdir -p ~/ros2_ws/src && cd ~/ros2_ws/src
-Install the required packages:
 
-```bash
-# Update packages
-sudo apt update
+# Clone your repository here (replace with your actual URL)
+# git clone <YOUR_REPOSITORY_URL>
 
-# Camera driver
-sudo apt install ros-humble-v4l2-camera
-
-# Image processing
-sudo apt install python3-opencv ros-humble-cv-bridge
-
-# AI libraries
-pip install ultralytics
-pip install numpy==1.26.4 --force-reinstall
-
-```
-
-### Step 2: Create the Workspace & Custom Messages 
-
-### Step 3: Create the Vision Node Package
-
-### Step 4: Write object_detector.py 
-
-### Step 5: Build and Run
-
-```bash
-
-# Build
-cd ~/ros2_ws
-colcon build
-
-# Source
-source ~/ros2_ws/install/setup.bash
-
-Run in 3 terminals:
-
-Terminal 1 (Camera):
-
-ros2 run v4l2_camera v4l2_camera_node
-
-Terminal 2 (Detector):
-
-ros2 run my_vision_node object_detector
-
-Terminal 3 (Output):
-
-ros2 topic echo /object_detections
