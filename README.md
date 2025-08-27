@@ -37,9 +37,12 @@ ThiOpenCV, CvBridge, Ultralytics
 
 ---
 
-## Project Guide: Building the Node
+## Install and Run
 
-### Step 1: System Prerequisites 
+### Step 1: Create ROS 2 Workspace
+First, create a **ROS 2 workspace** on your machine:
+```bash
+mkdir -p ~/ros2_ws/src && cd ~/ros2_ws/src
 Install the required packages:
 
 ```bash
